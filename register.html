@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Definición del tipo de documento y el idioma -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Título de la página -->
+    <title>Registro - UrbanIconic</title>
+    <!-- Enlace al archivo CSS externo -->
+    <link rel="stylesheet" href="static/css/register.css" />
+    <!-- Enlace a la biblioteca de iconos Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Enlace al icono de favicon -->
+    <link
+      rel="shortcut icon"
+      href="static/img/favicon.ico"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <!-- Encabezado de la página -->
+    <header>
+      <!-- Barra de navegación -->
+      <nav>
+        <!-- Logotipo -->
+        <div id="logo">
+          <a href="index.html">
+            <!-- Icono de carrito de compras -->
+            <i class="fa-solid fa-shopping-bag"></i>
+            <!-- Texto del logotipo -->
+            <span class="logo-texto">G13 UrbanIconic</span>
+          </a>
+        </div>
+      </nav>
+    </header>
+    <!-- Contenido principal de la página -->
+    <main>
+      <!-- Sección del formulario de registro -->
+      <section class="form-wrapper">
+        <!-- Formulario de registro -->
+        <form action="#" id="formRegister" method="get" novalidate>
+          <!-- Título del formulario -->
+          <h2>Crear una Cuenta</h2>
+          <!-- Campo de entrada para el nombre -->
+          <div class="form-control">
+            <label>Nombre</label>
+            <input type="text" required id="firstName" name="firstName" />
+          </div>
+          <!-- Contenedor para mostrar errores del nombre -->
+          <div class="error" id="error-firstname"></div>
+          <!-- Campo de entrada para el apellido -->
+          <div class="form-control">
+            <label>Apellido</label>
+            <input type="text" required id="lastName" name="lastName" />
+          </div>
+          <!-- Contenedor para mostrar errores del apellido -->
+          <div class="error" id="error-lastname"></div>
+          <!-- Campo de entrada para el correo electrónico -->
+          <div class="form-control">
+            <label>Email</label>
+            <input type="email" required id="email" name="email" />
+          </div>
+          <!-- Contenedor para mostrar errores del correo electrónico -->
+          <div class="error" id="error-email"></div>
+          <!-- Campo de entrada para la contraseña -->
+          <div class="form-control">
+            <label>Contraseña</label>
+            <input type="password" required id="password" name="password" />
+          </div>
+          <!-- Contenedor para mostrar errores de la contraseña -->
+          <div class="error" id="error-password"></div>
+          <!-- Campo de entrada para la fecha de nacimiento -->
+          <div class="form-control">
+            <label>Fecha de Nacimiento</label>
+            <input type="date" required id="birthdate" name="birthdate" />
+          </div>
+          <!-- Campo de selección para el país -->
+          <div class="form-control">
+            <label for="country"></label>
+            <select name="country" id="country" class="form-select">
+              <!-- Opciones para seleccionar el país -->
+              <option value="">Selecciona tu país</option>
+              <option value="AR">Argentina</option>
+              <option value="BO">Bolivia</option>
+              <option value="BR">Brasil</option>
+              <option value="CL">Chile</option>
+              <option value="CO">Colombia</option>
+              <option value="EC">Ecuador</option>
+              <option value="PY">Paraguay</option>
+              <option value="PE">Perú</option>
+              <option value="UY">Uruguay</option>
+              <option value="VE">Venezuela</option>
+            </select>
+          </div>
+          <!-- Contenedor para los términos y condiciones -->
+          <div class="form-terms">
+            <div class="terms">
+              <input type="checkbox" id="terms" />
+              <label for="terms"
+                >Acepto los <a href="#">términos y condiciones</a></label
+              >
+            </div>
+          </div>
+          <!-- Botón para enviar el formulario -->
+          <button type="submit">Crear Cuenta</button>
+          <!-- Enlace para obtener ayuda -->
+          <div class="form-help">
+            <a href="#">¿Necesitas ayuda?</a>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

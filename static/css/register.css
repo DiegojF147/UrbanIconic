@@ -1,0 +1,309 @@
+/* 
+    Estilos Globales
+*/
+
+/* Definición de variables CSS */
+:root {
+  --bg-color: #181419;                /* Color de fondo principal */
+  --primary-color: #fff;              /* Color primario (texto) */
+  --secondary-color: #ffc098;         /* Color secundario */
+  --third--color: #8c8c8c;            /* Tercer color */
+  --bg-form-color: #171625;           /* Color de fondo del formulario */
+  --bg-form-input-color: #ffffff1a;   /* Color de fondo del input del formulario */
+  --bg-input-color: #501725ec;        /* Color de fondo del botón del formulario */
+}
+
+/* Estilos generales para todos los elementos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+/* Estilos específicos para el cuerpo del documento */
+body {
+  background: var(--bg-color);   /* Aplicación del color de fondo principal */
+}
+
+/* Pseudo-elemento antes del cuerpo del documento (background) */
+body::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  background: url("../img/street-4542591_1280.jpg"); /* Imagen de fondo */
+  background-position: center;
+  background-size: cover;
+}
+
+/* 
+  Estilos de la Navegación 
+*/
+
+/* Estilos para la barra de navegación */
+nav {
+  position: fixed;
+  padding: 25px 60px;
+  color: var(--primary-color);
+  display: flex;
+  width: 100%;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+/* Estilos para el logo */
+#logo {
+  font-weight: bold;
+}
+
+#logo a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+#logo:hover {
+  animation: tilt-n-move-shaking 0.25s infinite;
+}
+
+/* Animación para el logo */
+@keyframes tilt-n-move-shaking {
+  0% {
+      transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+      transform: translate(5px, 5px) rotate(5deg);
+  }
+  50% {
+      transform: translate(0, 0) rotate(0deg);
+  }
+  75% {
+      transform: translate(-5px, 5px) rotate(-5deg);
+  }
+  100% {
+      transform: translate(0, 0) rotate(0deg);
+  }
+}
+
+/* 
+  Estilos del Formulario
+*/
+
+/* Estilos para el contenedor del formulario */
+.form-wrapper {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border-radius: 5px;
+  padding: 20px 70px;
+  width: 450px;
+  transform: translate(-50%, -50%);
+  background: var(--bg-form-color);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+/* Estilos para el título del formulario */
+.form-wrapper h2 {
+  color: var(--primary-color);
+  font-size: 2rem;
+}
+
+/* Estilos para el formulario */
+.form-wrapper form {
+  margin: 20px 0 10px;
+}
+
+/* Estilos para los controles del formulario */
+.form-control {
+  height: 50px;
+  position: relative;
+  margin-top: 15px;
+}
+
+/* Estilos para los inputs del formulario */
+.form-control input {
+  height: 100%;
+  width: 100%;
+  background: var(--bg-form-input-color);
+  border: 2px solid var(--third--color);
+  outline: none;
+  border-radius: 25px;
+  color: var(--primary-color);
+  font-size: 1rem;
+  padding: 0 20px;
+}
+
+/*Estilos para el bg de los inputs del formulario*/
+.form-control input:is(:focus, :valid) {
+  background: var(--bg-form-color);
+  padding: 16px 20px 0;
+}
+
+/* Estilos para los labels del formulario */
+.form-control label {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-130%);
+  font-size: 0.75rem;
+  pointer-events: none;
+  color: var(--third--color);
+  transition: all 0.1s ease;
+}
+
+#birthdate {
+  padding: 16px 20px 0px;
+}
+
+/* .form-control input:is(:focus, :valid) ~ label {
+  font-size: 0.75rem;
+  transform: translateY(-130%);
+} */
+
+/* Estilos para el select del formulario */
+.form-select {
+  display: block;
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--primary-color);
+  background: var(--bg-form-input-color);
+  border: 2px solid var(--third--color);
+  border-radius: 25px;
+}
+
+.form-select option {
+  color: var(--bg-color);
+}
+
+/* Estilos para los botones del formulario */
+form button {
+  width: 100%;
+  padding: 16px 0;
+  font-size: 1rem;
+  background-color: var(--bg-input-color);
+  color: var(--primary-color);
+  font-weight: 500;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  margin: 25px 0 10px;
+  cursor: pointer;
+  transition: 0.1s ease;
+}
+
+/* Estilos para los botones del formulario al pasar el mouse */
+form button:hover {
+  color: var(--secondary-color);
+}
+
+/* Estilos para los links del formulario */
+.form-wrapper a {
+  text-decoration: none;
+}
+
+/* Estilos para los links del formulario al pasar el mouse */
+.form-wrapper a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos para los elementos secundarios del formulario */
+.form-wrapper :where(label, p, small, a) {
+  color: var(--third--color);
+}
+
+/* Estilos para los términos del formulario */
+form .form-terms {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+form .terms {
+  display: flex;
+}
+
+form .terms input {
+  margin-right: 5px;
+  accent-color: var(--third--color);
+}
+
+form .form-terms :where(label, a) {
+  font-size: 0.9rem;
+}
+
+.form-wrapper p a {
+  color: var(--primary-color);
+}
+
+.form-wrapper small {
+  display: block;
+  margin-top: 15px;
+  color: var(--third--color);
+}
+
+
+
+/*ESTO ES PARA CUANDO TENGAMOS QUE HACER LA VALIDACION CON JAVA SCRIPT*/
+/* .error {
+  color: red;
+  margin-bottom: 5px;
+} */
+/* .form-control input.error,
+.form-select.error {
+  border: 2px solid red;
+} */
+
+/* 
+  Estilos para Dispositivos Móviles 
+*/
+@media (max-width: 740px) {
+  /* Ocultar el pseudo-elemento en dispositivos móviles */
+  body::before {
+      display: none;
+  }
+
+  /* Ajustar estilos de la navegación para dispositivos móviles */
+  nav {
+      font-size: 1em;
+      justify-content: center;
+  }
+
+  /* Ajustar padding para navegación y formulario */
+  nav,
+  .form-wrapper {
+      padding: 20px;
+  }
+
+  /* Ajustar estilos del contenedor del formulario */
+  .form-wrapper {
+      padding: 20px 70px;
+      margin-top: 30px;
+  }
+
+  /* Ajustar margen del formulario */
+  .form-wrapper form {
+      margin: 25px 0 65px;
+  }
+
+  /* nav a img {
+    width: 140px;
+  }
+
+  .form-wrapper {
+    width: 100%;
+    top: 50%;
+  }
+
+  .form-wrapper form {
+    margin: 25px 0 40px;
+  } */
+}
