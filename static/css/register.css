@@ -161,10 +161,10 @@ nav {
   padding: 16px 20px 0px;
 }
 
-/* .form-control input:is(:focus, :valid) ~ label {
+.form-control input:is(:focus, :valid) ~ label {
   font-size: 0.75rem;
   transform: translateY(-130%);
-} */
+}
 
 /* Estilos para el select del formulario */
 .form-select {
@@ -294,7 +294,7 @@ form .form-terms :where(label, a) {
       margin: 25px 0 65px;
   }
 
-  /* nav a img {
+  nav a img {
     width: 140px;
   }
 
@@ -305,5 +305,5 @@ form .form-terms :where(label, a) {
 
   .form-wrapper form {
     margin: 25px 0 40px;
-  } */
+  }
 }
