@@ -7,7 +7,7 @@
     <!-- Título de la página -->
     <title>Registro - UrbanIconic</title>
     <!-- Enlace al archivo CSS externo -->
-    <link rel="stylesheet" href="static/css/register.css" />
+    <link rel="stylesheet" href="/static/css/register.css"/>
     <!-- Enlace a la biblioteca de iconos Font Awesome -->
     <link
       rel="stylesheet"
@@ -16,7 +16,7 @@
     <!-- Enlace al icono de favicon -->
     <link
       rel="shortcut icon"
-      href="static/img/favicon.ico"
+      href="/static/img/shopping-bag.png"
       type="image/x-icon"
     />
   </head>
@@ -27,11 +27,11 @@
       <nav>
         <!-- Logotipo -->
         <div id="logo">
-          <a href="index.html">
+          <a href="../">
             <!-- Icono de carrito de compras -->
             <i class="fa-solid fa-shopping-bag"></i>
             <!-- Texto del logotipo -->
-            <span class="logo-texto">G13 UrbanIconic</span>
+            <span class="logo-texto">UrbanIconic</span>
           </a>
         </div>
       </nav>
@@ -41,20 +41,20 @@
       <!-- Sección del formulario de registro -->
       <section class="form-wrapper">
         <!-- Formulario de registro -->
-        <form action="#" id="formRegister" method="get" novalidate>
+        <form action="#" id="formRegister" method="GET" novalidate>
           <!-- Título del formulario -->
-          <h2>Crear una Cuenta</h2>
+          <h2>Registro</h2>
           <!-- Campo de entrada para el nombre -->
           <div class="form-control">
             <label>Nombre</label>
-            <input type="text" required id="firstName" name="firstName" />
+            <input type="text" required id="firstname" name="firstname" />
           </div>
           <!-- Contenedor para mostrar errores del nombre -->
           <div class="error" id="error-firstname"></div>
           <!-- Campo de entrada para el apellido -->
           <div class="form-control">
             <label>Apellido</label>
-            <input type="text" required id="lastName" name="lastName" />
+            <input type="text" required id="lastname" name="lastname" />
           </div>
           <!-- Contenedor para mostrar errores del apellido -->
           <div class="error" id="error-lastname"></div>
@@ -105,7 +105,7 @@
             </div>
           </div>
           <!-- Botón para enviar el formulario -->
-          <button type="submit">Crear Cuenta</button>
+          <button type="submit" id="btn-send">Registrarse</button>
           <!-- Enlace para obtener ayuda -->
           <div class="form-help">
             <a href="#">¿Necesitas ayuda?</a>
@@ -113,5 +113,6 @@
         </form>
       </section>
     </main>
+    <script src="../static/js/validation-register.js"></script>
   </body>
 </html>

@@ -11,6 +11,7 @@
   --bg-form-color: #171625;           /* Color de fondo del formulario */
   --bg-form-input-color: #ffffff1a;   /* Color de fondo del input del formulario */
   --bg-input-color: #501725ec;        /* Color de fondo del botón del formulario */
+  --bg-error-input: #ff0000;          /* Color de la leyenda error del input */
 }
 
 /* Estilos generales para todos los elementos */
@@ -51,7 +52,7 @@ nav {
   color: var(--primary-color);
   display: flex;
   width: 100%;
-  font-size: 1.3em;
+  font-size: 2em;
   font-weight: bold;
 }
 
@@ -161,10 +162,10 @@ nav {
   padding: 16px 20px 0px;
 }
 
-/* .form-control input:is(:focus, :valid) ~ label {
+.form-control input:is(:focus, :valid) ~ label {
   font-size: 0.75rem;
   transform: translateY(-130%);
-} */
+}
 
 /* Estilos para el select del formulario */
 .form-select {
@@ -252,15 +253,15 @@ form .form-terms :where(label, a) {
 
 
 
-/*ESTO ES PARA CUANDO TENGAMOS QUE HACER LA VALIDACION CON JAVA SCRIPT*/
-/* .error {
+/*Estilos para error en el input del formulario*/
+.error {
   color: red;
   margin-bottom: 5px;
-} */
-/* .form-control input.error,
+} 
+.form-control input.error,
 .form-select.error {
   border: 2px solid red;
-} */
+}
 
 /* 
   Estilos para Dispositivos Móviles 
@@ -269,6 +270,11 @@ form .form-terms :where(label, a) {
   /* Ocultar el pseudo-elemento en dispositivos móviles */
   body::before {
       display: none;
+  }
+
+  .form-wrapper h2 {
+    color: var(--primary-color);
+    font-size: 1.8rem;
   }
 
   /* Ajustar estilos de la navegación para dispositivos móviles */
@@ -294,8 +300,8 @@ form .form-terms :where(label, a) {
       margin: 25px 0 65px;
   }
 
-  /* nav a img {
-    width: 140px;
+  nav a img {
+    width: 100%;
   }
 
   .form-wrapper {
@@ -305,5 +311,5 @@ form .form-terms :where(label, a) {
 
   .form-wrapper form {
     margin: 25px 0 40px;
-  } */
+  }
 }

@@ -23,6 +23,14 @@ body {
   font-style: normal;
 }
 
+/* Estilos para la imagen de fondo detail-productos*/
+.detail-background {
+  background-image: url("../img/abstract-1891289_1280.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 /* Estilos para los enlaces */
 a {
   text-decoration: none;
@@ -31,7 +39,7 @@ a {
 /* Estilos para los títulos de nivel 1 */
 h1 {
   color: var(--primary-color); /* Aplicación del color primario */
-  font-size: 4vw;
+  font-size: 3vw;
 }
 
 /* Estilos para los títulos de nivel 2 */
@@ -61,17 +69,12 @@ nav {
   padding: 0px 50px;
 }
 
-/* Estilos para el contenedor de la imagen de fondo */
-.background-image-container {
-  background-image: url('../img/abstract-1891289_1280.jpg'); /* URL de la imagen de fondo */
-  background-size: cover; /* Tamaño de la imagen de fondo */
-  background-position: center; /* Posición de la imagen de fondo */
-  background-repeat: no-repeat; /* Repetición de la imagen de fondo */
-}
+
+
 
 /* Estilos para el título de nivel 1 */
 .h1-title {
-  font-size: 3vw;
+  font-size: 5vw;
   margin-bottom: 5%;
   margin-top: 2vw;
   text-align: center;
