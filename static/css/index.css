@@ -69,9 +69,6 @@ nav {
   padding: 0px 50px;
 }
 
-
-
-
 /* Estilos para el título de nivel 1 */
 .h1-title {
   font-size: 5vw;
@@ -138,7 +135,9 @@ nav {
 
 /* Estilos para el botón "Crear Cuenta" */
 .btn-urban {
-  background-color: var(--bg-button-color); /* Aplicación del color de fondo del botón */
+  background-color: var(
+    --bg-button-color
+  ); /* Aplicación del color de fondo del botón */
   padding: 10px;
   border-radius: 10px;
   color: var(--primary-color); /* Aplicación del color primario */
@@ -147,7 +146,9 @@ nav {
 
 /* Estilos al pasar el ratón por encima del botón "Crear Cuenta" */
 .btn-urban:hover {
-  color: var(--secondary-color) !important; /* Aplicación del color secundario al pasar el ratón por encima */
+  color: var(
+    --secondary-color
+  ) !important; /* Aplicación del color secundario al pasar el ratón por encima */
   border: 2px solid var(--secondary-color); /* Aplicación del borde de color secundario */
 }
 
@@ -192,19 +193,20 @@ nav {
   margin-bottom: 20px;
 }
 
-.sobre-nosotros{
+.sobre-nosotros {
   color: var(--primary-color);
   margin: 1%;
 }
 
-.sobre-nosotros ul{
+.sobre-nosotros ul {
   margin-left: 2%;
 }
 
-.sobre-nosotros h2{
+.sobre-nosotros h2 {
   font-size: 2vw;
 }
-.sobre-nosotros p, ul {
+.sobre-nosotros p,
+ul {
   font-size: 1vw;
 }
 
@@ -225,7 +227,9 @@ nav {
 
 /* Estilos para el input de búsqueda */
 .input-search {
-  background-color: var(--bg-input-color); /* Aplicación del color de fondo del input */
+  background-color: var(
+    --bg-input-color
+  ); /* Aplicación del color de fondo del input */
   border: 2px solid var(--primary-color); /* Borde del input */
   border-radius: 25px;
   color: var(--primary-color); /* Aplicación del color primario */
@@ -319,7 +323,9 @@ nav {
   overflow-y: auto;
   line-height: 15px;
   position: absolute;
-  background-color: var(--bg-button-color); /* Aplicación del color de fondo del botón */
+  background-color: var(
+    --bg-button-color
+  ); /* Aplicación del color de fondo del botón */
   box-sizing: border-box;
   transition: bottom 0.4s ease-in-out;
   width: 100%;
@@ -331,7 +337,7 @@ nav {
 }
 
 /* Estilos al pasar el ratón por encima de los detalles de los ítems de producto */
-.producto-item:hover .producto-item-detail {
+.producto-item-detail:hover {
   bottom: 0;
 }
 
@@ -438,17 +444,23 @@ nav {
 
 /* Estilos para la pista de la barra de desplazamiento */
 ::-webkit-scrollbar-track {
-  background: var(--bg-input-color); /* Aplicación del color de fondo del input */
+  background: var(
+    --bg-input-color
+  ); /* Aplicación del color de fondo del input */
 }
 
 /* Estilos para el mango de la barra de desplazamiento */
 ::-webkit-scrollbar-thumb {
-  background: var(--bg-button-color); /* Aplicación del color de fondo del botón */
+  background: var(
+    --bg-button-color
+  ); /* Aplicación del color de fondo del botón */
 }
 
 /* Estilos al pasar el ratón por encima del mango de la barra de desplazamiento */
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--bg-button-color); /* Aplicación del color de fondo del botón */
+  background: var(
+    --bg-button-color
+  ); /* Aplicación del color de fondo del botón */
 }
 
 /* Estilos para el formulario */
@@ -467,7 +479,9 @@ nav {
 /* Estilos para el pie de página */
 #footer {
   align-items: center;
-  background-color: var(--bg-button-color); /* Aplicación del color de fondo del botón */
+  background-color: var(
+    --bg-button-color
+  ); /* Aplicación del color de fondo del botón */
   display: flex;
   height: 100px;
   width: 100%;
@@ -510,7 +524,6 @@ nav {
 
 /* Media queries para pantallas grandes */
 @media screen and (max-width: 1920px) {
-  /* Estilos específicos para pantallas grandes */
 }
 
 /* Media queries para tablets */
@@ -521,21 +534,34 @@ nav {
   .login-text {
     display: none;
   }
-  .logo-text {
-    display: none;
-  }
+
   #banner {
     height: 400px;
   }
   #search {
+    margin: 15px;
     height: 200px;
   }
   .container {
+    margin: 30px auto;
     max-width: 720px;
   }
   .card-banner {
     padding: 0px 75px;
   }
+
+  .card-banner h1 {
+    font-size: 7vw;
+  }
+
+  .search-title {
+    font-size: 4.5vw;
+  }
+
+  .h2-subtitle {
+    font-size: 5vw;
+  }
+
   .producto-grid {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
@@ -549,10 +575,25 @@ nav {
     width: 100%;
   }
 
-  #footer {
+  .sobre-nosotros h2 {
+    font-size: 25px;
+  }
+
+  ul {
+    font-size: 15px;
+  }
+
+  .sobre-nosotros p {
+    font-size: 10px;
+  }
+
+  #footer a {
+    padding: 2px 0px;
+    font-size: 2.2vw;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 50px;
   }
 }
 
@@ -562,24 +603,44 @@ nav {
     font-size: 3vw;
   }
 
+  .nav-links {
+    font-size: 15px;
+    gap: 15px;
+  }
+
+  .card-banner h1 {
+    font-size: 25px;
+  }
+
   .h2-subtitle {
     font-size: 5vw;
   }
+
   .login-text {
     display: none;
   }
-  .logo-text {
-    display: none;
+
+  #logo a {
+    font-size: 1.2em;
   }
   #banner {
-    height: 300px;
+    height: 350px;
+  }
+  .logo-texto {
+    font-size: 0;
   }
   #search {
     height: 200px;
   }
   .container {
     max-width: 420px;
+    margin: 0px;
   }
+
+  .search-title {
+    font-size: 5vw;
+  }
+
   .card-banner {
     padding: 0px 50px;
   }
@@ -596,16 +657,24 @@ nav {
     width: 100%;
   }
 
-  .urban-cac {
-    font-size: 1vh;
+  .sobre-nosotros h2 {
+    font-size: 20px;
   }
-  #footer {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+
+  ul {
+    font-size: 10px;
+  }
+
+  .sobre-nosotros p {
+    font-size: 7px;
   }
 
   #footer a {
     padding: 2px 0px;
+    font-size: 3.5vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
   }
 }

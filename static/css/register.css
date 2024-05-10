@@ -255,61 +255,56 @@ form .form-terms :where(label, a) {
 
 /*Estilos para error en el input del formulario*/
 .error {
-  color: red;
+  color: var(--bg-error-input);
   margin-bottom: 5px;
 } 
 .form-control input.error,
 .form-select.error {
-  border: 2px solid red;
+  border: 2px solid var(--bg-error-input);
 }
 
 /* 
   Estilos para Dispositivos Móviles 
 */
 @media (max-width: 740px) {
-  /* Ocultar el pseudo-elemento en dispositivos móviles */
-  body::before {
-      display: none;
-  }
+.form-wrapper h2 {
+  color: var(--primary-color);
+  font-size: 1.8rem;
+}
 
-  .form-wrapper h2 {
-    color: var(--primary-color);
-    font-size: 1.8rem;
-  }
+/* Ajustar estilos de la navegación para dispositivos móviles */
+nav {
+  font-size: 1em;
+  justify-content: center;
+}
 
-  /* Ajustar estilos de la navegación para dispositivos móviles */
-  nav {
-      font-size: 1em;
-      justify-content: center;
-  }
+/* Ajustar padding para navegación y formulario */
+nav,
+.form-wrapper {
+  padding: 20px;
+}
 
-  /* Ajustar padding para navegación y formulario */
-  nav,
-  .form-wrapper {
-      padding: 20px;
-  }
+/* Ajustar estilos del contenedor del formulario */
+#logo{
+  font-size: 30px;
+}
 
-  /* Ajustar estilos del contenedor del formulario */
-  .form-wrapper {
-      padding: 20px 70px;
-      margin-top: 30px;
-  }
+.form-wrapper {
+  /* padding: 20px; */
+  margin-top: 60px;
+}
 
-  /* Ajustar margen del formulario */
-  .form-wrapper form {
-      margin: 25px 0 65px;
-  }
+/* Ajustar margen del formulario */
+nav a img {
+  width: 100%;
+}
 
-  nav a img {
-    width: 100%;
-  }
+.form-wrapper {
+  width: 100%;
+  top: 50%;
+}
 
-  .form-wrapper {
-    width: 100%;
-    top: 50%;
-  }
-
-  .form-wrapper form {
-    margin: 25px 0 40px;
-  }
+.form-wrapper form {
+  margin: 25px 0 40px;
+}
 }
