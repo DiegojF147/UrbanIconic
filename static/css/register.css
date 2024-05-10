@@ -68,25 +68,46 @@ nav {
 
 #logo:hover {
   animation: tilt-n-move-shaking 0.25s infinite;
+  -webkit-animation: tilt-n-move-shaking 0.25s infinite;
 }
 
 /* Animación para el logo */
 @keyframes tilt-n-move-shaking {
   0% {
       transform: translate(0, 0) rotate(0deg);
-  }
+      -webkit-transform: translate(0, 0) rotate(0deg);
+      -moz-transform: translate(0, 0) rotate(0deg);
+      -ms-transform: translate(0, 0) rotate(0deg);
+      -o-transform: translate(0, 0) rotate(0deg);
+}
   25% {
       transform: translate(5px, 5px) rotate(5deg);
-  }
+      -webkit-transform: translate(5px, 5px) rotate(5deg);
+      -moz-transform: translate(5px, 5px) rotate(5deg);
+      -ms-transform: translate(5px, 5px) rotate(5deg);
+      -o-transform: translate(5px, 5px) rotate(5deg);
+}
   50% {
       transform: translate(0, 0) rotate(0deg);
-  }
+      -webkit-transform: translate(0, 0) rotate(0deg);
+      -moz-transform: translate(0, 0) rotate(0deg);
+      -ms-transform: translate(0, 0) rotate(0deg);
+      -o-transform: translate(0, 0) rotate(0deg);
+}
   75% {
       transform: translate(-5px, 5px) rotate(-5deg);
-  }
+      -webkit-transform: translate(-5px, 5px) rotate(-5deg);
+      -moz-transform: translate(-5px, 5px) rotate(-5deg);
+      -ms-transform: translate(-5px, 5px) rotate(-5deg);
+      -o-transform: translate(-5px, 5px) rotate(-5deg);
+}
   100% {
       transform: translate(0, 0) rotate(0deg);
-  }
+      -webkit-transform: translate(0, 0) rotate(0deg);
+      -moz-transform: translate(0, 0) rotate(0deg);
+      -ms-transform: translate(0, 0) rotate(0deg);
+      -o-transform: translate(0, 0) rotate(0deg);
+}
 }
 
 /* 
@@ -107,6 +128,10 @@ nav {
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
 }
 
 /* Estilos para el título del formulario */
@@ -138,6 +163,10 @@ nav {
   color: var(--primary-color);
   font-size: 1rem;
   padding: 0 20px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
 }
 
 /*Estilos para el bg de los inputs del formulario*/
@@ -156,6 +185,14 @@ nav {
   pointer-events: none;
   color: var(--third--color);
   transition: all 0.1s ease;
+  -webkit-transition: all 0.1s ease;
+  -moz-transition: all 0.1s ease;
+  -ms-transition: all 0.1s ease;
+  -o-transition: all 0.1s ease;
+  -webkit-transform: translateY(-130%);
+  -moz-transform: translateY(-130%);
+  -ms-transform: translateY(-130%);
+  -o-transform: translateY(-130%);
 }
 
 #birthdate {
@@ -165,6 +202,10 @@ nav {
 .form-control input:is(:focus, :valid) ~ label {
   font-size: 0.75rem;
   transform: translateY(-130%);
+  -webkit-transform: translateY(-130%);
+  -moz-transform: translateY(-130%);
+  -ms-transform: translateY(-130%);
+  -o-transform: translateY(-130%);
 }
 
 /* Estilos para el select del formulario */
@@ -179,6 +220,10 @@ nav {
   background: var(--bg-form-input-color);
   border: 2px solid var(--third--color);
   border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
 }
 
 .form-select option {
@@ -199,6 +244,14 @@ form button {
   margin: 25px 0 10px;
   cursor: pointer;
   transition: 0.1s ease;
+  -webkit-transition: 0.1s ease;
+  -moz-transition: 0.1s ease;
+  -ms-transition: 0.1s ease;
+  -o-transition: 0.1s ease;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
 }
 
 /* Estilos para los botones del formulario al pasar el mouse */
@@ -255,61 +308,56 @@ form .form-terms :where(label, a) {
 
 /*Estilos para error en el input del formulario*/
 .error {
-  color: red;
+  color: var(--bg-error-input);
   margin-bottom: 5px;
 } 
 .form-control input.error,
 .form-select.error {
-  border: 2px solid red;
+  border: 2px solid var(--bg-error-input);
 }
 
 /* 
   Estilos para Dispositivos Móviles 
 */
 @media (max-width: 740px) {
-  /* Ocultar el pseudo-elemento en dispositivos móviles */
-  body::before {
-      display: none;
-  }
+.form-wrapper h2 {
+  font-size: 1.8rem;
+}
 
-  .form-wrapper h2 {
-    color: var(--primary-color);
-    font-size: 1.8rem;
-  }
+#logo {
+  font-size: 24px;
+  
+}
 
-  /* Ajustar estilos de la navegación para dispositivos móviles */
-  nav {
-      font-size: 1em;
-      justify-content: center;
-  }
+.form-wrapper {
+  
+  width: 90%;
+  left: 50%;
+  top: 55%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  z-index: 1;
+}
 
-  /* Ajustar padding para navegación y formulario */
-  nav,
-  .form-wrapper {
-      padding: 20px;
-  }
+ /* Ajustar el tamaño del logo dentro del nav para dispositivos móviles */
+ nav #logo {
+  font-size: 1.2rem;
+  
+}
 
-  /* Ajustar estilos del contenedor del formulario */
-  .form-wrapper {
-      padding: 20px 70px;
-      margin-top: 30px;
-  }
+main{
+  margin-top: 60px;
+  z-index: 0;
+}
 
-  /* Ajustar margen del formulario */
-  .form-wrapper form {
-      margin: 25px 0 65px;
-  }
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
 
-  nav a img {
-    width: 100%;
-  }
-
-  .form-wrapper {
-    width: 100%;
-    top: 50%;
-  }
-
-  .form-wrapper form {
-    margin: 25px 0 40px;
-  }
+.form-wrapper form {
+  margin: 0 10px;
+}
 }
