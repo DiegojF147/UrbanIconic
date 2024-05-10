@@ -290,8 +290,10 @@ nav,
 }
 
 .form-wrapper {
-  /* padding: 20px; */
+ position: fixed;
   margin-top: 60px;
+  width: 100%;
+  top: 50%;
 }
 
 /* Ajustar margen del formulario */
@@ -299,12 +301,7 @@ nav a img {
   width: 100%;
 }
 
-.form-wrapper {
-  width: 100%;
-  top: 50%;
-}
-
 .form-wrapper form {
-  margin: 25px 0 40px;
+  margin: 5px 0 40px;
 }
 }
