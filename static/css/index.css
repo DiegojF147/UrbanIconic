@@ -270,6 +270,14 @@ ul {
   row-gap: 20px;
 }
 
+/* Estilos para las imágenes de los ítems de producto */
+.producto-item-img {
+  width: 200px;
+  height: 300px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
 /* Estilos para los ítems de producto */
 .producto-item {
   border-radius: 20px;
@@ -285,35 +293,7 @@ ul {
   transform-origin: center left;
 }
 
-/* Estilos para las imágenes de los ítems de producto */
-.producto-item-img {
-  width: 200px;
-  height: 300px;
-  -o-object-fit: cover;
-  object-fit: cover;
-}
 
-/* Estilos para los detalles de los ítems de producto */
-.producto-item-detail1 {
-  align-items: flex-start;
-  background: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0.9) 0%,
-    rgba(0, 0, 0, 0) 100%
-  );
-  bottom: 0;
-  display: flex;
-  font-size: 10px;
-  flex-direction: column;
-  justify-content: flex-end;
-  left: 0;
-  opacity: 0;
-  transition: opacity 450ms;
-  padding: 10px;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
 
 /* Estilos para los detalles de los ítems de producto */
 .producto-item-detail {
@@ -323,9 +303,7 @@ ul {
   overflow-y: auto;
   line-height: 15px;
   position: absolute;
-  background-color: var(
-    --bg-button-color
-  ); /* Aplicación del color de fondo del botón */
+  background-color: var(--bg-button-color); 
   box-sizing: border-box;
   transition: bottom 0.4s ease-in-out;
   width: 100%;
@@ -337,7 +315,7 @@ ul {
 }
 
 /* Estilos al pasar el ratón por encima de los detalles de los ítems de producto */
-.producto-item-detail:hover {
+.producto-item:hover  .producto-item-detail {
   bottom: 0;
 }
 
@@ -358,6 +336,12 @@ ul {
 /* Estilos para el subtítulo de los detalles de los ítems de producto */
 .producto-item-detail-subtitle::after {
   content: "🌟"; /* Agregar un emoji al final del subtítulo */
+}
+
+.precio-producto{
+  color: var(--primary-color); 
+  font-size: 15px;
+  margin: 3px 0px;
 }
 
 /* Estilos para la sección de productos mejor valorados */
