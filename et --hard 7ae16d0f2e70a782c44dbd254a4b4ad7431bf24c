@@ -1,0 +1,135 @@
+[33mcommit 1a3833f5483848724ffe129b9c7336b8ecb79a26[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: pamelax87 <pamelax87@gmail.com>
+Date:   Mon May 13 21:58:27 2024 -0300
+
+    Se realizan cambios en mediaQuery para dispositivos pequeños
+
+[33mcommit 7ae16d0f2e70a782c44dbd254a4b4ad7431bf24c[m
+Merge: f1c655d 743af15
+Author: DiegojF147 <95386438+DiegojF147@users.noreply.github.com>
+Date:   Fri May 10 16:04:28 2024 -0300
+
+    Merge pull request #5 from DiegojF147/develop
+    
+    Fusión de la rama develop con main
+
+[33mcommit 743af1543879e555a9edece1d8bed33a9ff60a70[m
+Author: Diego <diegojf38@gmail.com>
+Date:   Fri May 10 13:23:27 2024 -0300
+
+    Se modifica archivo register.css
+
+[33mcommit 38fca237ebffdbc65d7e4e957734281d90059c80[m
+Author: Diego <diegojf38@gmail.com>
+Date:   Fri May 10 11:54:50 2024 -0300
+
+    Se agregan estilos responsivos en el archivo register.css para mejorar la visualización en dispositivos móviles.
+
+[33mcommit c275c7721c4f8729a11c31685f2f981d7c84354a[m
+Author: Diego <diegojf38@gmail.com>
+Date:   Thu May 9 23:17:01 2024 -0300
+
+    Se modificaron los archivos html y css para que el usuario tenga una mejor experiencia a la hora de recorrer la pagina
+
+[33mcommit de1c8b4a8c2b00f56f2991b553ba1c0d9e7cb758[m
+Merge: cfaf40a f1c655d
+Author: DiegojF147 <95386438+DiegojF147@users.noreply.github.com>
+Date:   Thu May 9 15:15:25 2024 -0300
+
+    Merge pull request #4 from DiegojF147/main
+    
+    Actualización
+
+[33mcommit f1c655dea18629b2b29c7603227e4075314974e2[m
+Author: Diego <diegojf38@gmail.com>
+Date:   Thu May 9 15:09:26 2024 -0300
+
+    Se modificaron las rutas de los archivos html
+
+[33mcommit 1f8c338694b13505f5c434875d395fa8690a265f[m
+Merge: be17863 cfaf40a
+Author: DiegojF147 <95386438+DiegojF147@users.noreply.github.com>
+Date:   Thu May 9 14:02:36 2024 -0300
+
+    Merge pull request #3 from DiegojF147/develop
+    
+    Develop
+
+[33mcommit cfaf40a6df292057a1b699a8bc0f5cc2324a72f9[m
+Author: Diego <diegojf38@gmail.com>
+Date:   Thu May 9 13:30:41 2024 -0300
+
+    Se crea la carpeta js donde se aloja el archivo validation-register.js para validar el formulario del archivo register.html y se realizan cambios en el archivo register.htmal
+
+[33mcommit 488777d52935a5701fc7be4b279bcf72c83e0de4[m
+Author: Diego <diegojf38@gmail.com>
+Date:   Wed May 8 20:00:08 2024 -0300
+
+    Se modificaron los archivos detail-productos y index.css, se cambio la clase en el body del detail-productos.html y los estilos en el index.css.
+
+[33mcommit 5492e2c626a32e56c5bf11a64338d5c078a6b86b[m
+Author: Diego <diegojf38@gmail.com>
+Date:   Wed May 8 19:00:02 2024 -0300
+
+    Se quito estilo de boostrap en el archivo index.css y en el archivo detail-productos.html
+
+[33mcommit e2030d2c89a9c6d3eadd353b47bd9b22fe7fc304[m
+Author: Diego <diegojf38@gmail.com>
+Date:   Wed May 8 18:32:42 2024 -0300
+
+    Se realizaron cambios en las carpetas css y templates. En los archivos index.css y register.css se modificaron estilos y en los archivos acerca-de-nosotros.html, detail-productos.html y register.html se modificaron las rutas de los enlaces.
+
+[33mcommit 1e0f89d16b25ef726f731e06df3140c0bf671ddf[m
+Author: Diego <diegojf38@gmail.com>
+Date:   Wed May 8 18:06:16 2024 -0300
+
+    Se modificaron los archivos html de la carpeta templates
+
+[33mcommit 1ed1394073a2680a8d440f43dc11632415cf77af[m
+Merge: 998b298 410baad
+Author: DiegojF147 <95386438+DiegojF147@users.noreply.github.com>
+Date:   Wed May 8 17:34:09 2024 -0300
+
+    Merge pull request #2 from DiegojF147/feature/modificaciones
+    
+    Se creo una nueva carpeta llamada 'templates'
+
+[33mcommit 410baadbfca389550805718e5664f13c8bff412c[m
+Author: Diego <diegojf38@gmail.com>
+Date:   Wed May 8 17:30:19 2024 -0300
+
+    Se creo una nueva carpeta llamada 'templates' para organizar los archivos HTML del proyecto. Los archivos HTML 'acerca-de-nosotros.html', 'detail-productos.html' y 'register.html' se agregaron a esta carpeta. Nota: el archivo 'index.html' permanece fuera de la carpeta 'templates'.
+
+[33mcommit 998b298433763d5fd4c44ac4397bbab30c717b3a[m
+Merge: be17863 9ea7cc4
+Author: DiegojF147 <95386438+DiegojF147@users.noreply.github.com>
+Date:   Wed May 8 16:12:12 2024 -0300
+
+    Merge pull request #1 from DiegojF147/feature/icono
+    
+    Se ha actualizado la imagen del icono de la página web para mejorar l…
+
+[33mcommit 9ea7cc49cfe041880ba22eb10ab5e57043418235[m
+Author: Diego <diegojf38@gmail.com>
+Date:   Wed May 8 16:03:15 2024 -0300
+
+    Se ha actualizado la imagen del icono de la página web para mejorar la identidad visual del sitio y proporcionar una experiencia de usuario más coherente. Se modifican estilos en el archivo css register.css
+
+[33mcommit be1786335dc8dd828fda06e38eb412dbd93302a3[m
+Merge: 46e119c 1fc17c1
+Author: Diego <diegojf38@gmail.com>
+Date:   Wed Apr 24 15:49:44 2024 -0300
+
+    Merge branch 'main' of https://github.com/DiegojF147/UrbanIconic
+
+[33mcommit 1fc17c104c6f368455467d1f444a84cad5d1ac73[m
+Author: DiegojF147 <95386438+DiegojF147@users.noreply.github.com>
+Date:   Wed Apr 24 15:42:09 2024 -0300
+
+    Initial commit
+
+[33mcommit 46e119cd466da5d96a41f21e8ee7ae11ce9826c6[m
+Author: Diego <diegojf38@gmail.com>
+Date:   Wed Apr 24 15:30:45 2024 -0300
+
+    Se suben los archivos html con páginas principales del proyecto: index.html, register.html, detail-productos.html y acerca-de-nosotros.html. Ademas se sube la carpeta static con archivos css, styles.css y register.css más imagenes.
