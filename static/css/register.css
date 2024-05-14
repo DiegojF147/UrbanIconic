@@ -326,12 +326,12 @@ form .form-terms :where(label, a) {
 
 #logo {
   font-size: 24px;
-  
+
 }
 
 .form-wrapper {
   
-  width: 90%;
+  width: 60%;
   left: 50%;
   top: 55%;
   transform: translate(-50%, -50%);
@@ -358,6 +358,6 @@ nav {
 }
 
 .form-wrapper form {
-  margin: 0 10px;
+  margin: 0 30px;
 }
 }
