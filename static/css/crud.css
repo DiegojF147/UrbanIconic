@@ -102,7 +102,16 @@
         -o-transform: translate(0, 0) rotate(0deg);
   }
   }
-
+  header {
+    background-color: transparent;
+    color: var(--primary-color); /* Aplicación del color primario */
+    position: fixed;
+    height: 60px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+  }
 /* 
   Estilos del Formulario
 */
@@ -111,7 +120,7 @@
 .form-wrapper {
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 50%; 
     border-radius: 1px;
     padding: 10px 40px;
     width: 75%;
@@ -208,7 +217,7 @@
   }
 
   form button {
-    width: 10%;
+    width: 8em;
     padding: 16px 0;
     font-size: 1rem;
     background-color: var(--bg-input-color);
@@ -238,3 +247,23 @@
   form button:hover {
     color: var(--secondary-color);
   }
+
+  @media screen and (max-width: 767px) {
+   
+    #logo a {
+      font-size: 1em;
+    } 
+    
+    .logo-texto {
+      font-size: 0;
+    }
+    
+    .form-control p{
+      font-size: 1em;
+    }
+
+    .form-wrapper h2{
+      font-size: 1em;
+    }
+
+}
