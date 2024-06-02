@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Definición del tipo de documento y el idioma -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Título de la página -->
+        <title>Gestion de Productos - UrbanIconic</title>
+        <!-- Enlace al archivo CSS externo -->
+        <link rel="stylesheet" href="../static/css/crud.css"/>
+        <!-- Enlace a la biblioteca de iconos Font Awesome -->
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+          />
+
+          <!-- Agregar fontawesome -->
+          <script src="https://kit.fontawesome.com/f7fb471b65.js" crossorigin="anonymous"></script>
+      
+          <!-- HACEMOS REFERENCIA A UN DOCUMENTO CSS EXTERNO --> 
+          <link rel="stylesheet" href="../static/css/crud.css">
+          
+        <!-- Enlace al icono de favicon -->
+        <link
+          rel="shortcut icon"
+          href="../static/img/shopping-bag.png"
+          type="image/x-icon"
+        />
+      </head>
+<body>
+    <!-- Encabezado de la página -->
+    <header>
+      <nav>
+        <div id="logo">
+          <a href="../">
+            <i class="fa-solid fa-shopping-bag"></i>
+            <span class="logo-texto">UrbanIconic</span>
+          </a>
+        </div>
+      </nav>
+    </header>
+<!-- -------------------------------------------------------------------------------- -->
+    <section class="form-wrapper"> 
+        <!-- Formulario de registro --> 
+        <form action="#"  id="formRegister">
+            <h2>Gestión de Productos</h2>
+            <p class="description" >En esta sección se podra llevar a cabo la gestión de las productos  </p>
+            <div class="d-flex">
+                <div class="form-control">
+                    <label >Producto</label>
+                    <input type="text" class="input-search" name="nombre" id="nombre">
+                </div>
+                <div class="form-control">
+                    <label >Categoria</label>
+                    <input type="text" class="input-search" name="tipo" id="tipo">
+                </div>
+                <div class="form-control">
+                    <label >Valoracion</label>
+                    <input type="number" class="input-search" name="rating" id="rating">
+                </div> 
+                <div class="form-control">
+                    <label >Precio</label>
+                    <input type="number" class="input-search" name="price" id="precio">
+                </div>
+                <div class="form-control">
+                    <label >Imagen decriptiva</label>
+                    <input type="url" class="input-search" name="banner-form" id="banner-form">
+                </div>
+                
+                <input type="hidden"  name="id" id="id-product"> 
+               
+                <button type="submit" name="id" id="#btn-save-product" onclick="saveProduct();">Agregar</button> 
+                
+            </div>
+        </form>  
+        <hr>
+        <h2 class="table">Listado de productos</h2>
+        <table id="list-table-product" class="table">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Categoria</th>
+                    <th>Valoracion</th>
+                    <th>Precio</th>
+                    <th>Imagen decriptiva</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="tbody-table-product">
+                
+            </tbody>
+        </table>
+    </section>  
+</main> 
+
+<script src="../static/js/crud.js"></script>
+ 
+</body>
+</html>
