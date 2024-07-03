@@ -485,7 +485,7 @@ ul {
 #footer a {
   color: var(--primary-color); /* Aplicación del color primario */
   cursor: pointer;
-  font-size: 1.2vw;
+  font-size: 1vw;
   padding-left: 30px;
   text-decoration: none;
 }
